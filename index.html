@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form id="login" action="">
+        <div>
+            <img id="logo" src="./img/logoIcon.png" alt=""> <!-- 유저 이미지 -->
+            <p id="loginWord">로그인</p>
+
+            <div id="loginInputDiv">
+                <div id="loginId" class="loginInputWrap">
+                    <input class="loginInput" type="text" required>
+                    <label class="loginLabel">이메일</label>
+                    <span class="loginSpan"></span>
+                </div> <!-- 아이디 -->
+
+                <div id="loginPw" class="loginInputWrap">
+                    <input class="loginInput" type="password" required>
+                    <label class="loginLabel">비밀번호</label>
+                    <span class="loginSpan"></span>
+                </div> <!-- 비밀번호 -->
+            </div>
+
+            <input id="submit" type="submit" value="로그인">
+
+            <div id="LoginReWrap"> <!-- 패스워드 분실 -->
+                <a id="forget" href="">비밀번호를 잊어버렸어요.</a>
+                <div id="signUpWrap">
+                    <p>아직 회원이 아니신가요?</p>&nbsp;&nbsp;
+                    <a href="">회원 가입하기</a>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>

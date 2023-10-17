@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#login{
+    margin-top: 140px;
+    position: relative;
+    left: 50%;
+    margin-left:-250px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+#logo{
+    position: relative;
+    left: 50%;
+    top: 10%;
+    margin-left: -100px;
+    width: 200px;
+}
+
+#loginWord{
+    position: relative;
+    top: 10%;
+    font-size: 22px;
+    text-align: center;
+}
+
+#loginInputDiv{
+margin-top: 100px;    
+}
+
+.loginInputWrap{
+    position: relative;
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: 40px;
+}
+
+.loginInput {
+    font-size: 15px;
+    color: #222222;
+    width: 250px;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+}
+
+.loginInput::placeholder { color: #aaaaaa; }
+.loginInput:focus { outline: none; }
+
+.loginSpan {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0%;  /* right로만 바꿔주면 오 - 왼 */
+    background-color: #666;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.loginLabel {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 16px;
+    bottom: 8px;
+    transition: all .2s;
+}
+
+.loginInput:focus ~ .loginLabel, .loginInput:valid ~ .loginLabel {
+    font-size: 14px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+}
+
+.loginInput:focus ~ .loginSpan, .loginInput:valid ~ .loginSpan {
+    width: 100%;
+}
+
+#submit{
+    position: relative;
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    height: 50px;
+    top: 7%;
+    border-radius: 30px;
+    border: none;
+    background-color: #21c79d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+#LoginReWrap{
+    position: relative;
+    top: 14%;
+
+}
+
+#forget{
+    position: relative;
+    left: 50%;
+    margin-left: -116.5px;
+    text-align: center;
+    padding: 10px 30px;
+    color: rgb(173, 173, 173);
+    font-size: 15px;
+}
+
+#signUpWrap{
+    display: flex;
+    padding: 20px 30px;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+}
+
+#signUpWrap>a{
+    color: #21c79d;
+    font-size: 15px;
+    font-weight: bold;
+}
