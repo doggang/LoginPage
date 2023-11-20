@@ -127,11 +127,11 @@ margin-top: 100px;
 #forget{
     position: relative;
     left: 50%;
-    margin-left: -116.5px;
+    margin-left: -96.5px;
     text-align: center;
     padding: 10px 30px;
     color: rgb(173, 173, 173);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #forget:hover{

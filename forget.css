@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#login{
+    margin-top: 140px;
+    position: relative;
+    left: 50%;
+    margin-left:-250px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px 6px 8px 0px rgb(158, 158, 158);
+}
+
+#logo{
+    position: relative;
+    left: 50%;
+    top: 10%;
+    margin-left: -100px;
+    width: 200px;
+}
+
+#loginWord{
+    position: relative;
+    top: 10%;
+    font-size: 22px;
+    text-align: center;
+}
+
+#userWrap{
+    position: relative;
+    top: 70px;
+    display: flex;
+}
+.find{
+    width: 195px;
+    height: 250px;
+}
+#idFind{
+    position: relative;
+    right: 10px;
+    top: 20px;
+    background-color: #FFF2CC;
+}
+#idFind:hover{
+    cursor: pointer;
+    border: 1px solid #ceae4e0e;
+    border-radius: 4px;
+}
+#pwFind{
+    background-color: #FCE5CD;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+#pwFind:hover{
+    cursor: pointer;
+    border: 1px solid rgba(143, 123, 62, 0.096);
+    border-radius: 4px;
+}
+
+.findWord{
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+#idFindWord{
+    margin-right: 15px;
+}
+
+#pwFindWord{
+    margin-left: 15px;
+}
