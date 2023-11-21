@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/signup.css">
+</head>
+
+<body>
+    <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+    <form id="login" method="POST" target="iframe1" onsubmit="pwChk();" action="https://script.google.com/macros/s/AKfycbx-nXhsR9wvzfoAkSpJWf6f4tvjCqhIWHuSPgISkDgQYLCB_LMV_z-2bNCCv6JGYyCB/exec">
+        <div>
+            <a href="../index.html"><img id="logo" src="../img/logoIcon.png" alt=""></a> 
+            <p id="loginWord">회원가입</p>
+
+            <div id="loginInputDiv">
+                <div id="loginId" class="loginInputWrap">
+                    <input id="inputId" class="loginInput" type="text" name="name" required>
+                    <label class="loginLabel">아이디</label>
+                    <span class="loginSpan"></span>
+                </div> 
+
+                <div id="loginPw" class="loginInputWrap">
+                    <input id="inputPw" class="loginInput" type="text" name="email" required>
+                    <label class="loginLabel">비밀번호</label>
+                    <span class="loginSpan"></span>
+                </div> 
+
+                <div id="loginPw" class="loginInputWrap">
+                    <input id="inputPwChk" class="loginInput" type="text" required>
+                    <label class="loginLabel">비밀번호 확인</label>
+                    <span class="loginSpan"></span>
+                </div> 
+                <p id="again" class="hidden">다시 입력해주시기 바랍니다.</p>
+            </div>
+            
+            <input id="submit" type="submit" value="로그인">
+
+        </div>
+    </form> 
+
+</body>
+<script src="../js/signup.js"></script>
+</html>
