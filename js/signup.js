@@ -1,12 +1,20 @@
 function pwChk(){
     const inputPw = document.getElementById('inputPw').value;
     const inputPwChk = document.getElementById('inputPwChk').value;
-
+    
     if(inputPw == inputPwChk){
-        alert("똑같애요");
-        return true;
+        if(document.getElementById('again').className=='hidden'){
+            document.getElementById('success').classList.remove('hiddensuccess');
+            alert("회원가입이 완료되었습니다.");
+            return true;
+        }else{
+            document.getElementById('again').className +='hidden';
+            document.getElementById('success').classList.remove('hiddensuccess');
+            alert("회원가입이 완료되었습니다.");
+            return true;
+        }
     }else{
-        alert("안똑같애요씨벌ㄹ럼아");
+        document.getElementById('again').classList.remove('hidden');
         return false;
     }
 }
